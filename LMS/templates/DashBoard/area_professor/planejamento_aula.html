@@ -10,14 +10,15 @@
     <title>YoungUniversity</title>
     <link rel="shortcut icon" href="{% static 'Imagens/logo/LogoYoung.png' %}" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
     <link href="{% static 'CSS/bootstrap.min.css' %}" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="{% static 'CSS/mdb.min.css' %}" rel="stylesheet">
     <!-- Your custom styles (optional) -->
-    <link href="{% static 'CSS/style.min.css' %}" rel="stylesheet">
+    <link href="{% static 'DashBoardCSS/area_professorCSS/planejamento_aula.css' %}" rel="stylesheet">
 </head>
 
 <body class="grey lighten-3">
@@ -35,8 +36,7 @@
                 </a>
 
                 <!-- Botão Sair -->
-                <li class="nav-item"> 
-                    <a class="btn ml-2 btn-warning" href="../">Voltar para o inicio</a></li>
+                <a class="btn ml-2 btn-warning" href="../../">Sair</a></li>
 
                 <!-- Collapse -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -55,20 +55,20 @@
             </a>
 
             <div class="list-group list-group-flush">
-                <a href="../" class="list-group-item active waves-effect">
+                <a href="../" class="list-group-item list-group-item-action waves-effect">
                     <i class="fa fa-pie-chart mr-3"></i>Inicio</a>
                 <a href="../calendario_prof" class="list-group-item list-group-item-action waves-effect">
                     <i class="fa fa-table mr-3"></i>Calendario geral</a>
-                <a href="../planejamento_aula" class="list-group-item list-group-item-action waves-effect">
+                <a href="../planejamento_aula" class="list-group-item active waves-effect">
                     <i class="fab fa-audible icone"></i>Plenejamento de aula</a>
                 <a href="../ouvidoria_prof" class="list-group-item list-group-item-action waves-effect">
-                    <i class="fas fa-assistive-listening-systems icone"></i>Ouvidoria</a> 
+                    <i class="fas fa-assistive-listening-systems icone"></i>Ouvidoria</a>
                 <a href="../corrigir_atividade_prof" class="list-group-item list-group-item-action waves-effect">
                     <i class="far fa-check-square icone"></i>Corrigir atividades</a>
                 <a href="../conta_prof" class="list-group-item list-group-item-action waves-effect">
                     <i class="fa fa-user mr-3"></i>Conta</a>
-                    
-                    
+
+
             </div>
 
         </div>
@@ -88,7 +88,7 @@
                 <div class="card-body d-sm-flex justify-content-between">
 
                     <h4 class="mb-2 mb-sm-0 pt-1">
-                        Pagina inicial
+                        Planeje sua Aula professor(a) <'nome do professor'>
                     </h4>
 
                     <form class="d-flex justify-content-center">
@@ -112,12 +112,82 @@
                 <div class="col-md-9 mb-4">
 
                     <!--Card-->
-                    <div class="card">
+                    <div class="cardPDF">
 
                         <!--Card content-->
                         <div class="card-body">
 
-                            <canvas id="myChart"></canvas>
+                            <h1>Turmas Ministradas</h1>
+
+                            <!--PRIMEIRA SALA-->
+                            <div class="col-lg-4">
+                                <div class="our-team-main">
+
+                                    <div class="team-front">
+                                        <img src="http://placehold.it/110x110/9c27b0/fff?text=1º A" class="img-fluid" />
+                                        <h3>Sala 205B Manhã</h3>
+                                        <p>42 Alunos </p>
+                                    </div>
+
+                                    <div class="team-back">
+                                        <span>
+                                            Deixe aqui suas notações para essa sala.
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--FIM PRIMEIRA SALA-->
+
+
+                            <!--SEGUDA SALA-->
+                            <div class="col-lg-4">
+                                <div class="our-team-main">
+
+                                    <div class="team-front">
+                                        <img src="http://placehold.it/110x110/336699/fff?text=3º B" class="img-fluid" />
+                                        <h3>Sala 103A Noite</h3>
+                                        <p>20 Alunos</p>
+                                    </div>
+
+                                    <div class="team-back">
+                                        <span>
+                                            Deixe aqui suas notações para essa sala.
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--FIM SEGUNDA SALA-->
+
+
+                            <!--team-3-->
+                            <div class="col-lg-4">
+                                <div class="our-team-main">
+
+                                    <div class="team-front">
+                                        <img src="http://placehold.it/110x110/607d8b/fff?text=Dilip" class="img-fluid" />
+                                        <h3>Dilip Kevat</h3>
+                                        <p>Web Designer</p>
+                                    </div>
+
+                                    <div class="team-back">
+                                        <span>
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                                            ligula eget dolor. Aenean massa. Cum sociis
+                                            natoque penatibus et magnis dis parturient montes,
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                                            ligula eget dolor. Aenean massa. Cum sociis
+                                            natoque.
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--team-3-->
+
+
+
 
                         </div>
 
@@ -261,7 +331,8 @@
 
                         <!-- Card header -->
                         <div class="card-header">Comunicado!</div>
-                        <p class="comunicado">Avisar a turma do 2E do curso de ADS que na proxima segunda não havera aula.</p>
+                        <p class="comunicado">Avisar a turma do 2E do curso de ADS que na proxima segunda não havera
+                            aula.</p>
 
                     </div>
                     <!--/.Card-->
@@ -298,9 +369,11 @@
     <footer class="page-footer text-center font-small primary-color-dark darken-2 mt-4 wow fadeIn">
         <!--Copyright-->
         <div class="card-body text-center">
-            <h4 class="text-white"><p>&copy; Copyright Young Developer 2018 </p> </h4>
-            <p class="h5 text-white"> for Ecommerce, marketplace, booking websites 
-            and product landing pages</p>   <br>
+            <h4 class="text-white">
+                <p>&copy; Copyright Young Developer 2018 </p>
+            </h4>
+            <p class="h5 text-white"> for Ecommerce, marketplace, booking websites
+                and product landing pages</p> <br>
         </div>
         <!--/.Copyright-->
     </footer>
@@ -308,165 +381,14 @@
 
     <!-- SCRIPTS -->
     <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
     <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/popper.min.js' %}"></script>
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %} "></script>
     <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/mdb.min.js' %}"></script>
     <!-- Initializations -->
-    <script type="text/javascript">
-        // Animations initialization
-        new WOW().init();
-    </script>
-
-    <!-- Charts -->
-    <script>
-        // Line
-        var ctx = document.getElementById("myChart").getContext('2d');
-        var myChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ["2° B", "1° F", "1° C", "3° F", "2° A", "3° C"],
-                datasets: [{
-                    label: 'Atividades Entregues',
-                    data: [12, 19, 7, 13, 10, 16],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(153, 102, 255, 0.2)',
-                        'rgba(255, 159, 64, 0.2)'
-                    ],
-                    borderColor: [
-                        'rgba(255,99,132,1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                        'rgba(255, 159, 64, 1)'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero: true
-                        }
-                    }]
-                }
-            }
-        });
-
-        //pie
-        var ctxP = document.getElementById("pieChart").getContext('2d');
-        var myPieChart = new Chart(ctxP, {
-            type: 'pie',
-            data: {
-                labels: ["Red", "Green", "Yellow", "Grey", "Dark Grey"],
-                datasets: [{
-                    data: [300, 50, 100, 40, 120],
-                    backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
-                    hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
-                }]
-            },
-            options: {
-                responsive: true,
-                legend: false
-            }
-        });
-
-
-        //line
-        var ctxL = document.getElementById("lineChart").getContext('2d');
-        var myLineChart = new Chart(ctxL, {
-            type: 'line',
-            data: {
-                labels: ["January", "February", "March", "April", "May", "June", "July"],
-                datasets: [{
-                        label: "My First dataset",
-                        backgroundColor: [
-                            'rgba(105, 0, 132, .2)',
-                        ],
-                        borderColor: [
-                            'rgba(200, 99, 132, .7)',
-                        ],
-                        borderWidth: 2,
-                        data: [65, 59, 80, 81, 56, 55, 40]
-                    },
-                    {
-                        label: "My Second dataset",
-                        backgroundColor: [
-                            'rgba(0, 137, 132, .2)',
-                        ],
-                        borderColor: [
-                            'rgba(0, 10, 130, .7)',
-                        ],
-                        data: [28, 48, 40, 19, 86, 27, 90]
-                    }
-                ]
-            },
-            options: {
-                responsive: true
-            }
-        });
-
-
-        //radar
-        var ctxR = document.getElementById("radarChart").getContext('2d');
-        var myRadarChart = new Chart(ctxR, {
-            type: 'radar',
-            data: {
-                labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
-                datasets: [{
-                    label: "My First dataset",
-                    data: [65, 59, 90, 81, 56, 55, 40],
-                    backgroundColor: [
-                        'rgba(105, 0, 132, .2)',
-                    ],
-                    borderColor: [
-                        'rgba(200, 99, 132, .7)',
-                    ],
-                    borderWidth: 2
-                }, {
-                    label: "My Second dataset",
-                    data: [28, 48, 40, 19, 96, 27, 100],
-                    backgroundColor: [
-                        'rgba(0, 250, 220, .2)',
-                    ],
-                    borderColor: [
-                        'rgba(0, 213, 132, .7)',
-                    ],
-                    borderWidth: 2
-                }]
-            },
-            options: {
-                responsive: true
-            }
-        });
-
-        //doughnut
-        var ctxD = document.getElementById("doughnutChart").getContext('2d');
-        var myLineChart = new Chart(ctxD, {
-            type: 'doughnut',
-            data: {
-                labels: ["Red", "Green", "Yellow", "Grey", "Dark Grey"],
-                datasets: [{
-                    data: [300, 50, 100, 40, 120],
-                    backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
-                    hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
-                }]
-            },
-            options: {
-                responsive: true
-            }
-        });
-    </script>
-
 
 </body>
 

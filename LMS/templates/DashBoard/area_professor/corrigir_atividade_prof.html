@@ -35,8 +35,7 @@
                 </a>
 
                 <!-- Botão Sair -->
-                <li class="nav-item"> 
-                    <a class="btn ml-2 btn-warning" href="../">Voltar para o inicio</a></li>
+                <a class="btn ml-2 btn-warning" href="../../">Sair</a></li>
 
                 <!-- Collapse -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -55,7 +54,7 @@
             </a>
 
             <div class="list-group list-group-flush">
-                <a href="../" class="list-group-item active waves-effect">
+                <a href="../" class="list-group-item list-group-item-action waves-effect">
                     <i class="fa fa-pie-chart mr-3"></i>Inicio</a>
                 <a href="../calendario_prof" class="list-group-item list-group-item-action waves-effect">
                     <i class="fa fa-table mr-3"></i>Calendario geral</a>
@@ -63,7 +62,7 @@
                     <i class="fab fa-audible icone"></i>Plenejamento de aula</a>
                 <a href="../ouvidoria_prof" class="list-group-item list-group-item-action waves-effect">
                     <i class="fas fa-assistive-listening-systems icone"></i>Ouvidoria</a> 
-                <a href="../corrigir_atividade_prof" class="list-group-item list-group-item-action waves-effect">
+                <a href="../corrigir_atividade_prof" class="list-group-item active waves-effect">
                     <i class="far fa-check-square icone"></i>Corrigir atividades</a>
                 <a href="../conta_prof" class="list-group-item list-group-item-action waves-effect">
                     <i class="fa fa-user mr-3"></i>Conta</a>
@@ -308,13 +307,13 @@
 
     <!-- SCRIPTS -->
     <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
     <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/popper.min.js' %}"></script>
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %} "></script>
     <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/mdb.min.js' %}"></script>
     <!-- Initializations -->
     <script type="text/javascript">
         // Animations initialization

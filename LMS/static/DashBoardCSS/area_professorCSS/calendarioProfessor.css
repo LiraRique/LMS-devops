@@ -19,6 +19,8 @@
     padding: 2.5rem
 }
 
+
+/* #############  Configurações da logo ########### */
 .sidebar-fixed .logo-wrapper img {
     max-height: 100px
 }
@@ -45,6 +47,19 @@
 .cardPDF{
 
     height: 100%;
+    width: 137%;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    border-radius: 10px;
+    
+    background-color:#fff;
+    background-size: cover;
+    z-index: 0;   
+}
+
+
+.cardLegenda{
+    
+    height: 100%;
     width: 100%;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
     border-radius: 10px;
@@ -55,7 +70,8 @@
       rgba(192, 108, 123, 0.8)
       );       
     background-size: cover;
-    z-index: 0;   
+    z-index: 0; 
+
 }
 
 .cardAulas{
@@ -74,6 +90,7 @@ h1{
     font-weight: 500 !important;
     padding: 10px;
     margin-bottom: 4%;
+    text-align: center;
 }
 .comunicado {
     margin: 17px;

@@ -1,0 +1,2 @@
+release: python manage.py migrate
+web: gunicorn TecWeb_LMS.wsgi --log-file-

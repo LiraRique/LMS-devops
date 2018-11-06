@@ -17,7 +17,7 @@
     <!-- Material Design Bootstrap -->
     <link href="{% static 'CSS/mdb.min.css' %}" rel="stylesheet">
     <!-- Your custom styles (optional) -->
-    <link href="{% static 'CSS/style.min.css' %}" rel="stylesheet">
+    <link href="{% static 'DashBoardCSS/area_professorCSS/calendarioProfessor.css' %}" rel="stylesheet">
 </head>
 
 <body class="grey lighten-3">
@@ -35,8 +35,7 @@
                 </a>
 
                 <!-- Botão Sair -->
-                <li class="nav-item"> 
-                    <a class="btn ml-2 btn-warning" href="../">Voltar para o inicio</a></li>
+                <a class="btn ml-2 btn-warning" href="../../">Sair</a></li>
 
                 <!-- Collapse -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -55,9 +54,9 @@
             </a>
 
             <div class="list-group list-group-flush">
-                <a href="../" class="list-group-item active waves-effect">
+                <a href="../" class="list-group-item list-group-item-action waves-effect">
                     <i class="fa fa-pie-chart mr-3"></i>Inicio</a>
-                <a href="../calendario_prof" class="list-group-item list-group-item-action waves-effect">
+                <a href="../calendario_prof" class="list-group-item active waves-effect">
                     <i class="fa fa-table mr-3"></i>Calendario geral</a>
                 <a href="../planejamento_aula" class="list-group-item list-group-item-action waves-effect">
                     <i class="fab fa-audible icone"></i>Plenejamento de aula</a>
@@ -88,15 +87,11 @@
                 <div class="card-body d-sm-flex justify-content-between">
 
                     <h4 class="mb-2 mb-sm-0 pt-1">
-                        Pagina inicial
+                        Confira seu Calendario professor(a) <'Nome do professor'> da sala 2ºF - Noturno
+
                     </h4>
 
-                    <form class="d-flex justify-content-center">
-                        <!-- Default input -->
-                        <input type="search" placeholder="Busque" aria-label="Search" class="form-control">
-                        <button class="btn btn-primary btn-sm my-0 p" type="submit">
-                            <i class="fa fa-search"></i>
-                        </button>
+                   
 
                     </form>
 
@@ -104,21 +99,23 @@
 
             </div>
             <!-- Heading -->
-
-            <!--Grid row-->
-            <div class="row wow fadeIn">
+            
+             <!--Grid row-->
+             <div class="row wow fadeIn">
 
                 <!--Grid column-->
                 <div class="col-md-9 mb-4">
 
                     <!--Card-->
-                    <div class="card">
-
+                    <div class="cardPDF">
+                        
                         <!--Card content-->
                         <div class="card-body">
+                            <h1>&nbsp; Calendario Graduação 2° Semestre 2018</h1>
 
-                            <canvas id="myChart"></canvas>
-
+                            <!-- Aqui aonde fica o PDF do plano de ensino-->
+                            <iframe src="../../../static/docs/Calendario-Graduacao-2018_2.pdf" width="100%" height="800px;"  style="zoom:120%; border: none;"></iframe>
+                            <!-- Fim PDF-->
                         </div>
 
                     </div>
@@ -126,66 +123,32 @@
 
                 </div>
                 <!--Grid column-->
+             </div>
 
-                <!--Grid column-->
-                <div class="col-md-3 mb-4">
-
-                    <!--Card-->
-                    <div class="card mb-4">
-
-                        <!--Card content-->
-                        <div class="card-body">
-
-                            <!-- List group links -->
-                            <div class="list-group list-group-flush">
-                                <a class="list-group-item list-group-item-action waves-effect">Corrigir
-                                    <span class="badge badge-primary badge-pill pull-right">14</span>
-                                </a>
-                                <a class="list-group-item list-group-item-action waves-effect">Corrigidos
-                                    <span class="badge badge-primary badge-pill pull-right">96</span>
-                                </a>
-                                <a class="list-group-item list-group-item-action waves-effect">Chamado
-                                    <span class="badge badge-primary badge-pill pull-right">0</span>
-                                </a>
-                                <a class="list-group-item list-group-item-action waves-effect">Mensagem
-                                    <span class="badge badge-primary badge-pill pull-right">8</span>
-                                </a>
-                            </div>
-                            <!-- List group links -->
-
-                        </div>
-
-                    </div>
-                    <!--/.Card-->
-
-                </div>
-                <!--Grid column-->
-
-            </div>
-            <!--Grid row-->
-
+            
             <!--Grid row-->
             <div class="row wow fadeIn">
                 <!--Grid column-->
                 <div class="col-md-6 mb-4">
 
                     <!--Card-->
-                    <div class="card">
+                    <div class="cardAulas">
 
                         <!--Card content-->
                         <div class="card-body">
-                            <h1>Agenda</h1>
+                            <h1>Mês de Novembro</h1>
                             <!-- Table  -->
                             <table class="table table-hover">
                                 <!-- Table head -->
                                 <thead class="blue lighten-4">
                                     <tr>
-                                        <th>periodo</th>
-                                        <th>Seg</th>
-                                        <th>Ter</th>
-                                        <th>Qua</th>
-                                        <th>Quin</th>
-                                        <th>Sex</th>
+                                        <th>Domingo</th>
+                                        <th>Segunda</th>
+                                        <th>Terça</th>
+                                        <th>Quarta</th>
+                                        <th>Quinta</th>
+                                        <th>Sexta</th>
+                                        <th>Sábado</th>
                                     </tr>
                                 </thead>
                                 <!-- Table head -->
@@ -193,28 +156,50 @@
                                 <!-- Table body -->
                                 <tbody>
                                     <tr>
-                                        <th scope="row">Manhã</th>
-                                        <td>1° F</td>
-                                        <td>2° C</td>
-                                        <td>1° B</td>
-                                        <td>2° A</td>
-                                        <td>2° D</td>
+
+                                        <td class="grey lighten-4">28</td>
+                                        <td class="grey lighten-4">29</td>
+                                        <td class="grey lighten-4">30</td>
+                                        <td>31</td>
+                                        <td>1</td>
+                                        <td class="red lighten-4">2</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>  
+                                        <td>4</td>
+                                        <td>5</td>
+                                        <td>6</td>
+                                        <td class="yellow lighten-2">7</td>
+                                        <td>8</td>
+                                        <td>9</td>
+                                        <td>10</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">Tarde</th>
-                                        <td>1° B</td>
-                                        <td>3° C</td>
-                                        <td>2° B</td>
-                                        <td>1° A</td>
-                                        <td>2° F</td>
+                                        <td>11</td>
+                                        <td>12</td>
+                                        <td>13</td>
+                                        <td class="yellow lighten-2">14</td>
+                                        <td class="red lighten-4">15</td>
+                                        <td>16</td>
+                                        <td>17</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">Noite</th>
-                                        <td>3° F</td>
-                                        <td>1° C</td>
-                                        <td>1° </td>
-                                        <td>2° A</td>
-                                        <td>2° D</td>
+                                        <td>18</td>
+                                        <td>19</td>
+                                        <td class="red lighten-4">20</td>
+                                        <td class="yellow lighten-2">21</td>
+                                        <td class="red lighten-4">22</td>
+                                        <td>23</td>
+                                        <td>24</td>
+                                    </tr>
+                                    <tr>
+                                        <td>25</td>
+                                        <td>26</td>
+                                        <td>27</td>
+                                        <td class="yellow lighten-2">28</td>
+                                        <td>29</td>
+                                        <td>30</td>
+                                        <td class="grey lighten-4">1</td>
                                     </tr>
                                 </tbody>
                                 <!-- Table body -->
@@ -232,6 +217,8 @@
             </div>
             <!--Grid row-->
 
+            
+
             <!--Grid row-->
             <div class="row wow fadeIn">
 
@@ -242,8 +229,28 @@
                     <div class="card">
 
                         <!-- Card header -->
-                        <div class="card-header">Comunicado!</div>
-                        <p class="comunicado">Comparecer na secretaria para pegar a nova carteirinha da faculdade.</p>
+                        <div class="card-header">Gestão das Atividades 2F - Noturno</div>
+                        <p class="comunicado">
+                            <a class="list-group-item green lighten-3 list-group-item-action waves-effect">AC1
+                                <span class="badge badge-primary badge-pill pull-right">Corrigida</span>
+                             </a>
+                             
+                            <a class="list-group-item green lighten-3 list-group-item-action waves-effect">AC2
+                                    <span class="badge badge-primary badge-pill pull-right">Corrigida</span>
+                                 </a>
+                                 
+                            <a class="list-group-item green lighten-3 list-group-item-action waves-effect">AC3
+                                    <span class="badge badge-primary badge-pill pull-right">Corrigida</span>
+                                 </a>
+                                 
+                            <a class="list-group-item green lighten-3 list-group-item-action waves-effect">AC4
+                                    <span class="badge badge-primary badge-pill pull-right">Corrigida</span>
+                                 </a>                                 
+                            <a class="list-group-item red lighten-3 list-group-item-action waves-effect">AC5
+                                    <span class="badge badge-primary badge-pill pull-right">Data : 12/11</span>
+                                 </a>
+
+                        </p>
 
 
 
@@ -260,9 +267,19 @@
                     <div class="card">
 
                         <!-- Card header -->
-                        <div class="card-header">Comunicado!</div>
-                        <p class="comunicado">Avisar a turma do 2E do curso de ADS que na proxima segunda não havera aula.</p>
 
+                        <div class="card-header">Legenda</div>
+
+                        <!-- Lista Da legenda-->
+                        <div class="list-group list-group-flush">
+                                <a class="list-group-item yellow lighten-2 list-group-item-action waves-effect">AC
+                                    <span class="badge badge-primary badge-pill pull-right">Dias 7/14/21/28</span>
+                                </a>
+                                <a class="list-group-item red lighten-4 list-group-item-action waves-effect">Feriados
+                                    <span class="badge badge-primary badge-pill pull-right">Dias 2/15/20/22</span>
+                                </a>
+                                <br><br>
+                        </div>
                     </div>
                     <!--/.Card-->
 
@@ -278,6 +295,8 @@
                         <!-- Card header -->
                         <div class="card-header">Comunicado!</div>
                         <p class="comunicado">Corrigir todas as atividades até a proxima semana.</p>
+
+                        
 
                     </div>
                     <!--/.Card-->
@@ -308,13 +327,13 @@
 
     <!-- SCRIPTS -->
     <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
     <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/popper.min.js' %}"></script>
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %} "></script>
     <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/mdb.min.js' %}"></script>
     <!-- Initializations -->
     <script type="text/javascript">
         // Animations initialization
@@ -322,151 +341,7 @@
     </script>
 
     <!-- Charts -->
-    <script>
-        // Line
-        var ctx = document.getElementById("myChart").getContext('2d');
-        var myChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ["2° B", "1° F", "1° C", "3° F", "2° A", "3° C"],
-                datasets: [{
-                    label: 'Atividades Entregues',
-                    data: [12, 19, 7, 13, 10, 16],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(153, 102, 255, 0.2)',
-                        'rgba(255, 159, 64, 0.2)'
-                    ],
-                    borderColor: [
-                        'rgba(255,99,132,1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                        'rgba(255, 159, 64, 1)'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero: true
-                        }
-                    }]
-                }
-            }
-        });
-
-        //pie
-        var ctxP = document.getElementById("pieChart").getContext('2d');
-        var myPieChart = new Chart(ctxP, {
-            type: 'pie',
-            data: {
-                labels: ["Red", "Green", "Yellow", "Grey", "Dark Grey"],
-                datasets: [{
-                    data: [300, 50, 100, 40, 120],
-                    backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
-                    hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
-                }]
-            },
-            options: {
-                responsive: true,
-                legend: false
-            }
-        });
-
-
-        //line
-        var ctxL = document.getElementById("lineChart").getContext('2d');
-        var myLineChart = new Chart(ctxL, {
-            type: 'line',
-            data: {
-                labels: ["January", "February", "March", "April", "May", "June", "July"],
-                datasets: [{
-                        label: "My First dataset",
-                        backgroundColor: [
-                            'rgba(105, 0, 132, .2)',
-                        ],
-                        borderColor: [
-                            'rgba(200, 99, 132, .7)',
-                        ],
-                        borderWidth: 2,
-                        data: [65, 59, 80, 81, 56, 55, 40]
-                    },
-                    {
-                        label: "My Second dataset",
-                        backgroundColor: [
-                            'rgba(0, 137, 132, .2)',
-                        ],
-                        borderColor: [
-                            'rgba(0, 10, 130, .7)',
-                        ],
-                        data: [28, 48, 40, 19, 86, 27, 90]
-                    }
-                ]
-            },
-            options: {
-                responsive: true
-            }
-        });
-
-
-        //radar
-        var ctxR = document.getElementById("radarChart").getContext('2d');
-        var myRadarChart = new Chart(ctxR, {
-            type: 'radar',
-            data: {
-                labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
-                datasets: [{
-                    label: "My First dataset",
-                    data: [65, 59, 90, 81, 56, 55, 40],
-                    backgroundColor: [
-                        'rgba(105, 0, 132, .2)',
-                    ],
-                    borderColor: [
-                        'rgba(200, 99, 132, .7)',
-                    ],
-                    borderWidth: 2
-                }, {
-                    label: "My Second dataset",
-                    data: [28, 48, 40, 19, 96, 27, 100],
-                    backgroundColor: [
-                        'rgba(0, 250, 220, .2)',
-                    ],
-                    borderColor: [
-                        'rgba(0, 213, 132, .7)',
-                    ],
-                    borderWidth: 2
-                }]
-            },
-            options: {
-                responsive: true
-            }
-        });
-
-        //doughnut
-        var ctxD = document.getElementById("doughnutChart").getContext('2d');
-        var myLineChart = new Chart(ctxD, {
-            type: 'doughnut',
-            data: {
-                labels: ["Red", "Green", "Yellow", "Grey", "Dark Grey"],
-                datasets: [{
-                    data: [300, 50, 100, 40, 120],
-                    backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
-                    hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
-                }]
-            },
-            options: {
-                responsive: true
-            }
-        });
-    </script>
-
+   
 
 </body>
 
