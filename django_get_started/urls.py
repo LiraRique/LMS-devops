@@ -61,18 +61,10 @@ urlpatterns = patterns('',
     url(r'^contato$', 'app.views.contato', name='contato'),
     url(r'^graduacao', 'app.views.graduacao', name='graduacao'),
     url(r'^cadastro_cursos', 'app.views.cadastro_cursos', name='cadastro_cursos'),
-    url(r'^login/$',
-        'django.contrib.auth.views.login',
-        {
-            'template_name': 'app/login.html',
-            'authentication_form': BootstrapAuthenticationForm,
-            'extra_context':
-            {
-                'title':'Log in',
-                'year':datetime.now().year,
-            }
-        },
-        name='login'),
+    url(r'^Curso-ADS', 'app.views.ads', name='Curso-ADS'),
+
+
+        
     url(r'^logout$',
         'django.contrib.auth.views.logout',
         {
