@@ -63,11 +63,13 @@ urlpatterns = patterns('',
     url(r'^noticia', 'app.views.noticia', name='noticia'),
     url(r'^login', 'app.views.login', name='login'),
 
-
-
-
-    url(r'^cadastro_cursos', 'app.views.cadastro_cursos', name='cadastro_cursos'),
+    # CURSOS
     url(r'^ADS', 'app.views.ads', name='ADS'),
+    url(r'^SI', 'app.views.si', name='SI'),
+    url(r'^WebDesigner', 'app.views.WebDesigner', name='WebDesigner'),
+    url(r'^JogosDigitais', 'app.views.JogosDigitais', name='JogosDigitais'),
+    url(r'^BancoDeDados', 'app.views.BancoDeDados', name='BancoDeDados'),
+    url(r'^ProducaoMultimidia', 'app.views.ProducaoMultimidia', name='ProducaoMultimidia'),
 
 
         
