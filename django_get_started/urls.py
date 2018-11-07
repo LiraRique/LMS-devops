@@ -61,7 +61,7 @@ urlpatterns = patterns('',
     url(r'^contato$', 'app.views.contato', name='contato'),
     url(r'^graduacao', 'app.views.graduacao', name='graduacao'),
     url(r'^cadastro_cursos', 'app.views.cadastro_cursos', name='cadastro_cursos'),
-    url(r'^Curso-ADS', 'app.views.ads', name='Curso-ADS'),
+    url(r'^graduacao/ADS', 'app.views.ads', name='Curso-ADS'),
 
 
         
