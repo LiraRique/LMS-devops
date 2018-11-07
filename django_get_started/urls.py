@@ -1,6 +1,8 @@
 from django.contrib import admin
-from django.urls import path
 from app.views import *
+from datetime import datetime
+from django.conf.urls import patterns, url
+from app.forms import BootstrapAuthenticationForm
 
 urlpatterns = [
     #PAGINAS DAS HOMES
