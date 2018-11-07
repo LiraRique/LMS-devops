@@ -74,10 +74,10 @@ urlpatterns = patterns('',
     #Dash ALuno
     url(r'^dashboardAluno', 'app.views.DashAluno', name='dashAluno'),
     url(r'^calendario_geral', 'app.views.calendario_aluno', name='calendario_aluno'),
-    url(r'^atividades_entregue_aluno', 'app.views.atividades_entregue_aluno', name='atividades_entregue_aluno'),
-    url(r'^ouvidoria_aluno', 'app.views.ouvidoria_aluno', name='ouvidoria_aluno'),
-    url(r'^financeiro_aluno', 'app.views.financeiro_aluno', name='financeiro_aluno'),
-    url(r'^conta_aluno', 'app.views.conta_aluno', name='conta_aluno'),
+    url(r'^atividades_entregue', 'app.views.atividades_entregue_aluno', name='atividades_entregue_aluno'),
+    url(r'^ouvidoria', 'app.views.ouvidoria_aluno', name='ouvidoria_aluno'),
+    url(r'^financeiro', 'app.views.financeiro_aluno', name='financeiro_aluno'),
+    url(r'^conta', 'app.views.conta_aluno', name='conta_aluno'),
 
    
 
