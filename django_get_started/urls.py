@@ -71,14 +71,9 @@ urlpatterns = patterns('',
     url(r'^BancoDeDados', 'app.views.BancoDeDados', name='BancoDeDados'),
     url(r'^ProducaoMultimidia', 'app.views.ProducaoMultimidia', name='ProducaoMultimidia'),
 
+    #Dash ALuno
 
-        
-    url(r'^logout$',
-        'django.contrib.auth.views.logout',
-        {
-            'next_page': '/',
-        },
-        name='logout'),
+   
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
