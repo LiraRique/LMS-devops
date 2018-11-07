@@ -59,7 +59,7 @@ urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'app.views.index', name='home'),
     url(r'^contato$', 'app.views.contato', name='contato'),
-    url(r'^about', 'app.views.about', name='about'),
+    url(r'^graduacao', 'app.views.graduacao', name='graduacao'),
     url(r'^cadastro_cursos', 'app.views.cadastro_cursos', name='cadastro_cursos'),
     url(r'^login/$',
         'django.contrib.auth.views.login',
