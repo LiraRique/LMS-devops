@@ -56,10 +56,16 @@ from app.forms import BootstrapAuthenticationForm
 # admin.autodiscover()
 
 urlpatterns = patterns('',
-    # Examples:
+    # Pagina Principal:
     url(r'^$', 'app.views.index', name='home'),
-    url(r'^contato$', 'app.views.contato', name='contato'),
-    url(r'^graduacao', 'app.views.graduacao', name='graduacao'),
+    url(r'^contato', 'app.views.contato', name='contato'),
+    url(r'^graduacao', 'app.views.graduacao', name='graduacao'),  
+    url(r'^noticia', 'app.views.noticia', name='noticia'),
+    url(r'^login', 'app.views.login', name='login'),
+
+
+
+
     url(r'^cadastro_cursos', 'app.views.cadastro_cursos', name='cadastro_cursos'),
     url(r'^ADS', 'app.views.ads', name='ADS'),
 
