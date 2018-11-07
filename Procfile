@@ -1,1 +1,0 @@
-web: gunicorn TecWeb_LMS.wsgi --log-file -
