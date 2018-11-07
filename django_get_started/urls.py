@@ -72,7 +72,7 @@ urlpatterns = patterns('',
     url(r'^ProducaoMultimidia', 'app.views.ProducaoMultimidia', name='ProducaoMultimidia'),
 
     #Dash ALuno
-    url(r'^dashboardAluno', 'app.views.DashAluno', name='dashboardAluno'),
+    url(r'^dashboardAluno', 'app.views.DashAluno', name='dashAluno'),
     url(r'^calendario_aluno', 'app.views.calendario_aluno', name='calendario_aluno'),
     url(r'^atividades_entregue_aluno', 'app.views.atividades_entregue_aluno', name='atividades_entregue_aluno'),
     url(r'^ouvidoria_aluno', 'app.views.ouvidoria_aluno', name='ouvidoria_aluno'),
