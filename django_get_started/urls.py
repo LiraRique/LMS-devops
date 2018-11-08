@@ -91,7 +91,7 @@ urlpatterns = patterns('',
    url(r'^dashboard_coordenador', 'app.views.dashboard_coordenador', name='dashboard_coordenador'),
    url(r'^cadastrar_prof', 'app.views.cadastrar_prof', name='cadastrar_prof'),
    url(r'^cadastrar_aluno', 'app.views.cadastrar_aluno', name='cadastrar_aluno'),
-   url(r'^teste', 'app.views.teste', name='teste'),
+   url(r'^Conta_Coordenador', 'app.views.Conta_Coordenador', name='Conta_Coordenador'),
 
 
     # Uncomment the admin/doc line below to enable admin documentation:

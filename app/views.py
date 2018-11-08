@@ -90,5 +90,5 @@ def cadastrar_prof(request):
 def cadastrar_aluno(request):
     return render(request,'DashBoard/area_coordenador/cadastrar_aluno.html')
 
-def teste(request):
-    return render(request,'DashBoard/area_coordenador/teste.html')
+def Conta_Coordenador(request):
+    return render(request,'DashBoard/area_coordenador/Conta_Coordenador.html')
