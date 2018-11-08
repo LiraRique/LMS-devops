@@ -10,8 +10,8 @@
     <title>YoungUniversity</title>
     <link rel="shortcut icon" href="{% static 'Imagens/logo/LogoYoung.png' %}" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'https://use.fontawesome.com/releases/v5.4.2/css/all.css' %}" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' %}">
     <!-- Bootstrap core CSS -->
     <link href="{% static 'CSS/bootstrap.min.css' %}" rel="stylesheet">
     <!-- Material Design Bootstrap -->
@@ -54,13 +54,13 @@
             </a>
 
             <div class="list-group list-group-flush">
-                <a href="../dashboard_coordenador" class="list-group-item list-group-item-action waves-effect">
+                <a href="dashboard_coordenador" class="list-group-item list-group-item-action waves-effect">
                     <i class="fa fa-pie-chart mr-3"></i>Inicio</a>
-                <a href="../cadastrar_prof" class="list-group-item list-group-item-action  waves-effect">
+                <a href="cadastrar_prof" class="list-group-item list-group-item-action  waves-effect">
                     <i class="fa fa-book mr-3"></i>Cadastro Professor</a>
-                <a href="../cadastrar_aluno" class="list-group-item list-group-item-action waves-effect">
+                <a href="cadastrar_aluno" class="list-group-item list-group-item-action waves-effect">
                     <i class="fa fa-book mr-3"></i>Cadastro Aluno</a>
-                <a href="../conta_coordenador" class="list-group-item list-group-item-action active waves-effect">
+                <a href="conta_coordenador" class="list-group-item list-group-item-action active waves-effect">
                     <i class="fa fa-user mr-3"></i>Conta</a>
                     
                     
@@ -78,7 +78,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="profile-img">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog" alt=""/>
+                    <img src="{% static 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog' %}" alt=""/>
                     <div class="file btn btn-lg btn-primary">
                         Alterar foto
                         <input type="file" name="file"/>
