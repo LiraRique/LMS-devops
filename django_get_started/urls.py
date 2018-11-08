@@ -71,7 +71,7 @@ urlpatterns = patterns('',
     url(r'^BancoDeDados', 'app.views.BancoDeDados', name='BancoDeDados'),
     url(r'^ProducaoMultimidia', 'app.views.ProducaoMultimidia', name='ProducaoMultimidia'),
 
-    #Dash ALuno
+    # Dash ALuno
     url(r'^dashboardAluno', 'app.views.DashAluno', name='dashAluno'),
     url(r'^calendario_geral', 'app.views.calendario_aluno', name='calendario_aluno'),
     url(r'^atividades_entregue', 'app.views.atividades_entregue_aluno', name='atividades_entregue_aluno'),
@@ -79,6 +79,13 @@ urlpatterns = patterns('',
     url(r'^financeiro', 'app.views.financeiro_aluno', name='financeiro_aluno'),
     url(r'^conta', 'app.views.conta_aluno', name='conta_aluno'),
 
+    # Dash Professor
+    url(r'^dashboardProf', 'app.views.DashProf', name='DashProf'),
+    url(r'^calendario_prof', 'app.views.calendario_prof', name='calendario_prof'),
+    url(r'^planejamento_aula', 'app.views.planejamento_aula', name='planejamento_aula'),
+    url(r'^ouvidoria_prof', 'app.views.ouvidoria_prof', name='ouvidoria_prof'),
+    url(r'^corrigir_atividade_prof', 'app.views.corrigir_atividade_prof', name='corrigir_atividade_prof'),
+    url(r'^conta_prof', 'app.views.conta_prof', name='conta_prof'),
    
 
     # Uncomment the admin/doc line below to enable admin documentation:
