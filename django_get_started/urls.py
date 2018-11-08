@@ -87,6 +87,12 @@ urlpatterns = patterns('',
     url(r'^corrigir_atividade_prof', 'app.views.corrigir_atividade_prof', name='corrigir_atividade_prof'),
     url(r'^conta_prof', 'app.views.conta_prof', name='conta_prof'),
    
+   # Dash Coordenador
+   url(r'^dashboard_coordenador', 'app.views.dashboard_coordenador', name='dashboard_coordenador'),
+   url(r'^cadastrar_prof', 'app.views.cadastrar_prof', name='cadastrar_prof'),
+   url(r'^cadastrar_aluno', 'app.views.cadastrar_aluno', name='cadastrar_aluno'),
+   url(r'^conta_coordenador', 'app.views.conta_coordenador', name='conta_coordenador'),
+
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

@@ -78,3 +78,17 @@ def corrigir_atividade_prof(request):
 
 def conta_prof(request):
     return render(request,'DashBoard/area_professor/conta_prof.html')
+
+############## AREA Coordenador ##############
+
+def dashboard_coordenador(request):
+    return render(request,'DashBoard/area_coordenador/dashboard_coordenador.html')
+
+def cadastrar_prof(request):
+    return render(request,'DashBoard/area_coordenador/cadastrar_prof.html')
+
+def cadastrar_aluno(request):
+    return render(request,'DashBoard/area_coordenador/cadastrar_aluno.html')
+
+def conta_coordenador(request):
+    return render(request,'DashBoard/area_coordenador/conta_coordenador.html')
