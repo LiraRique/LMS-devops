@@ -91,4 +91,4 @@ def cadastrar_aluno(request):
     return render(request,'DashBoard/area_coordenador/cadastrar_aluno.html')
 
 def conta_coor(request):
-    return render(request,'DashBoard/area_coordenador/conta_coordenador.html')
+    return render(request,'DashBoard/area_coordenador/conta_coor.html')
