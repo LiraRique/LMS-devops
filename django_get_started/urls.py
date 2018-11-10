@@ -77,7 +77,7 @@ urlpatterns = patterns('',
     url(r'^atividades_entregue', 'app.views.atividades_entregue_aluno', name='atividades_entregue_aluno'),
     url(r'^ouvidoria_aluno', 'app.views.ouvidoria_aluno', name='ouvidoria_aluno'),
     url(r'^financeiro', 'app.views.financeiro_aluno', name='financeiro_aluno'),
-    url(r'^conta', 'app.views.conta_aluno', name='conta_aluno'),
+    url(r'^conta_aluno', 'app.views.conta_aluno', name='conta_aluno'),
 
     # Dash Professor
     url(r'^dashboardProf', 'app.views.DashProf', name='DashProf'),

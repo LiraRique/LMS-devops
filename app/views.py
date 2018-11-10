@@ -57,7 +57,7 @@ def financeiro_aluno(request):
     return render(request,'DashBoard/area_aluno/financeiro.html')
 
 def conta_aluno(request):
-    return render(request,'DashBoard/area_aluno/conta.html')
+    return render(request,'DashBoard/area_aluno/conta_aluno.html')
 
 ############## AREA PROFESSOR ##############
 
