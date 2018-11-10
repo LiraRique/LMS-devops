@@ -51,7 +51,7 @@ def atividades_entregue_aluno(request):
     return render(request,'DashBoard/area_aluno/atividades_entregue.html')
 
 def ouvidoria_aluno(request):
-    return render(request,'DashBoard/area_aluno/ouvidoria.html')
+    return render(request,'DashBoard/area_aluno/ouvidoria_aluno.html')
 
 def financeiro_aluno(request):
     return render(request,'DashBoard/area_aluno/financeiro.html')
